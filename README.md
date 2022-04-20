@@ -1,0 +1,1 @@
+SquashFS delta.

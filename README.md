@@ -8,11 +8,11 @@ This repo is an exploration of a better approach, which - while working with the
 
 The two bash scripts, `generate_delta.sh` and `apply_delta.sh` have syntax that is equivalent to `xdelta3 -e -s` and `xdelta3 -d -s` respectively. Namely:
 ```
-generate_delta.sh old_file new_file output_delta_file
+generate_delta.sh <file_A> <file_B> <output_delta_file>
 ```
 and
 ```
-apply_delta.sh old_file delta_file output_new_file
+apply_delta.sh <file_A> <delta_file> <output_file_B>
 ```
 
 ## Under-the-hood, and prerequisites

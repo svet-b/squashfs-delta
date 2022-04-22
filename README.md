@@ -1,6 +1,6 @@
 ## Motivation
 
-[SquashFS](https://www.kernel.org/doc/html/latest/filesystems/squashfs.html) images are a popular way to store file trees for a variety of good reasons. They is for example used for package distribution in [Snapcraft](https://snapcraft.io) and [AppImage](https://appimage.org). But while both of those package/app managers push package updates as SquashFS deltas, SquashFS images were never created with binary deltas in mind.
+[SquashFS](https://www.kernel.org/doc/html/latest/filesystems/squashfs.html) images are a popular way to store file trees for a variety of good reasons. They are for example used for package distribution in [Snapcraft](https://snapcraft.io) and [AppImage](https://appimage.org). But while both of those package/app managers push package updates as SquashFS deltas, SquashFS images were never created with binary deltas in mind.
 
 Namely, the content of SquashFS images is virtually always compressed, so even a small change in the underlying content can lead to quite a different image. Meaning a relatively large delta.
 
